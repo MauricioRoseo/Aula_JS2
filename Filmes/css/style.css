@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #e2e2e2;
+}
+
+/*Header*/
+.header {
+    background-color: #212121;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 70px;
+}
+
+.espace {
+    font-size: 20px;
+}
+
+.pages ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.pages ul li {
+    margin-right: 20px;
+}
+
+.pages ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.pages ul li a:hover {
+    color: #dddddd;
+}
+
+/*modelo*/
+.modelo {
+    display: none;
+}
+
+/*Conteudo*/
+main {
+    background-color: rgb(250, 250, 250);
+}
+
+main h1 {
+    text-align: center;
+    font-size: 35px;
+    padding: 15px 0;
+}
+
+.modelo-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.filme-item {
+    max-width: 500px;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.filme-item-img {
+    width: 30vw;
+    align-items: center;
+    padding-left: 12vh;
+}
+
+.filme-item-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.2);
+}
+
+.filme-item-name {
+    font-size: 22px;
+    text-align: center;
+}
+
+.filme-item-nota {
+    font-size: 15px;
+    text-align: center;
+    margin: 5px;
+}
+
+.filme-item-sinopse {
+    text-align: justify;
+    height: 100px;
+    max-width: 95%;
+}
+
+.filme-item-watch {
+    text-align: center;
+}
+
+.bnt-linktree {
+    margin: 30px 0;
+    padding: 20px 30px;
+    border-radius: 20px;
+    background-color: #330606;
+    color: #fff;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.bnt-linktree:hover {
+    background-color: #7c0000;
+}
+
+.linktree {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(225, 255, 255, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    transition: all ease 0.5s;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px; /* Bordas arredondadas */
+    width: 60%;
+}
+
+.assitir-bnt {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f3ebeb;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px;
+    list-style: none;
+    margin-right: 10px;
+}
+
+.assitir-bnt:hover {
+    background-color: #f7b9b9; /* Cor de fundo ao passar o mouse */
+}
+
+.modeloInfo-cancelMobileButton {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modeloInfo-cancelMobileButton:hover,
+.modeloInfo-cancelMobileButton:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 760px) {
+    .filme-item-sinopse{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 545px) {
+    .filme-item-sinopse{
+        font-size: 10px;
+    }
+}
+
+.Ringu-title{
+    max-width: 100px;
+}
+
+#ringu {
+    background-image: url("../gif/background.gif");
+    background-repeat: repeat;
+}
+
+#ringu_txt{
+    color: #ffffff;
+}
+
+#ringu_bnt{
+    background-color: #888;
+}
+
+#filme-item_ringu{
+    background-color: #0000006e;
+    
+}
+.Friday-title{
+    max-width: 300px;
+}
+
+#friday {
+    background-image: url("../img/Background.jpg");
+    background-size: contain;
+}
+
+#friday_txt{
+    color: #ffffff;
+}
+
+#friday_bnt{
+    background-color: #888;
+}
+
+#filme-item_friday{
+    background-color: #ffffff0e;
+    
+}
+
+#modelo-area_friday{
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 150px;
+}
+
+.logos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.Ringu{
+    text-align: center;
+    background-image: url("../gif/background.gif");
+    width: 350px;
+    border-radius: 10%;
+}
+
+.Ringu img{
+    height: 300px;
+    opacity: 0.6;
+}
+
+.Friday{
+    text-align: center;
+    background-image: url(../img/Background.jpg);
+    background-size: cover;
+    border-radius: 10%;
+}
+
+.Friday img{
+    height: 300px;
+    opacity: 0.6;
+}
